@@ -24,6 +24,7 @@ body {
     padding: 30px 0px;
 
     background-color: #E5E9F0;
+    border-radius: 20px;
 }
 
 h1 {
@@ -38,7 +39,7 @@ form {
     border-radius: 10px;
 
     width: 400px;
-    margin: 20px auto;
+    margin: 30px auto 50px;
 }
 
 input[type="text"] {
@@ -53,7 +54,7 @@ input[type="text"]:focus {
     outline: none;
 }
 
-button {
+button[type="submit"] {
     padding: 20px;
 
     background-color: #4C566A;
@@ -63,6 +64,36 @@ button {
     border-radius: 10px;
 }
 
+.delete-btn {
+    background-color: #4C566A;
+    color: #ECEFF4;
+
+    padding: 10px 13px;
+    margin: 10px 0px;
+
+    border: none;
+    border-radius: 7.5px;
+}  
+
 button:hover {
     cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+th {
+    border: 2px solid #4C566A;
+    border-right: transparent; border-left: transparent;
+    padding: 15px 0px;
+}
+
+tr {
+    text-align: center;
+}
+
+.deleteColumn {
+    width: 200px;
 }

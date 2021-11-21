@@ -36,7 +36,7 @@ form {
     justify-content: space-between;
 
     background-color: #D8DEE9;
-    border-radius: 10px;
+    border-radius: 7.5px;
 
     width: 400px;
     margin: 30px auto 50px;
@@ -44,9 +44,11 @@ form {
 
 input[type="text"] {
     width: 100%;
-    padding: 20px;
+    padding: 10px 20px;
 
     background-color: transparent;
+    color: #4C566A;
+
     border: none;
 }
 
@@ -54,21 +56,27 @@ input[type="text"]:focus {
     outline: none;
 }
 
-button[type="submit"] {
-    padding: 20px;
-
-    background-color: #4C566A;
-    color: #ECEFF4;
-
-    border: 3px solid #4C566A;
-    border-radius: 10px;
+input::placeholder {
+    color: #4C566A80;
 }
 
-.delete-btn {
-    background-color: #4C566A;
+button[type="submit"] {
+    padding: 10px 0px;
+    width: 100px;
+
+    background-color: #3bcf85;
     color: #ECEFF4;
 
-    padding: 10px 13px;
+    border: none;
+    border-radius: 7.5px;
+}
+
+.delete {
+    background-color: #c93544;
+    color: #ECEFF4;
+
+    padding: 10px 0px;
+    width: 75px;
     margin: 10px 0px;
 
     border: none;
@@ -83,17 +91,11 @@ table {
     border-collapse: collapse;
     width: 100%;
 }
-  
-th {
-    border: 2px solid #4C566A;
-    border-right: transparent; border-left: transparent;
-    padding: 15px 0px;
-}
 
 tr {
-    text-align: center;
-}
-
-.deleteColumn {
-    width: 200px;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

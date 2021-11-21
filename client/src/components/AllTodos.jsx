@@ -32,16 +32,14 @@ const AllTodos = () => {
 
     return (
         <table>
-            <thead>
-                <th className="taskCloumn">Task</th>
-                <th className="deleteColumn">Delete</th>
-            </thead>
             <tbody>
                 {todos.map(todo => (
+                    <>
                     <tr key={todo.id}>
-                        <td>{todo.description}</td>
-                        <td><button class="delete-btn" onClick={() => { deleteTodo(todo.id) }}>Delete</button></td>
+                        <td>• {todo.description}</td>
+                        <td><button class="delete" onClick={() => { deleteTodo(todo.id) }}>Delete</button></td>
                     </tr>
+                    </>
                 ))}
             </tbody>
         </table>
